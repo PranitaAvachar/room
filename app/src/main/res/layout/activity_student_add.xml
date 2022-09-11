@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentAddActivity">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Enter your name"
+        android:layout_margin="10dp"
+        android:id="@+id/idEdtNoteName"/>
+
+    <!--edit text for note description-->
+
+
+    <EditText
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Enter your surname"
+        android:layout_margin="10dp"
+        android:id="@+id/idEdtNoteDesc" android:singleLine="false"
+        android:inputType="textMultiLine"
+        android:gravity="start|top"
+        android:layout_below="@id/idEdtNoteName"
+        android:layout_above="@id/idBtn"/>
+
+    <!--button for saving and updating a note-->
+
+
+    <Button
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:id="@+id/idBtn"
+        android:textAllCaps="false"
+        android:text="Save"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
